@@ -1,0 +1,2119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="https://clientWS/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="https://clientWS/AbstractTypes" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="https://clientWS/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://clientWS/">
+      <s:element name="requestVehicleCategoryLocations">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SecureKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestVehicleCategoryLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestVehicleCategoryLocationsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestVehicleAvailability">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PickupLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PickupDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PickupTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DropOffLocation" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DropOffDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DropOffTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DriverAge" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecureKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PromoCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestVehicleAvailabilityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestVehicleAvailabilityResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmVehicleSelection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CarID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmVehicleSelectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmVehicleSelectionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestExtras">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestExtrasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestExtrasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmInsuranceFees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InsuranceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmInsuranceFeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmInsuranceFeesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmExtraFees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ExtraFeeIDQty" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="confirmExtraFeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmExtraFeesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmKmFees">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="KmsID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmKmFeesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmKmFeesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmAreaofUse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AreaofUsedID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmAreaofUseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmAreaofUseResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmVehicleBookingQuote">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerFirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerLastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrimaryDriverDOB" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PrimaryDriverLicenseNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseIssuedCountryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseExpiryDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="StateProvince" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CountryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerEmailID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerPhone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ArrivalFlight" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PickUpRequiredFrom" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DropOffRequiredTo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NoOfTravelling" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CarTransmissionPreferenceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RentalSourceID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdditionalDetails" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardTypeID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CCV" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NameOnCreditCard" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreditCardExpiryDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BookingType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmVehicleBookingQuoteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmVehicleBookingQuoteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCarTransmissionPreference">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCarTransmissionPreferenceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestCarTransmissionPreferenceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestRentalSource">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestRentalSourceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestRentalSourceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCustomerCountryDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCustomerCountryDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestCustomerCountryDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmExistingCustomerDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerLastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerEmail" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmExistingCustomerDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmExistingCustomerDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestLocationBrand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="URLID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestLocationBrandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestLocationBrandResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmLocationBrand">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BrandID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmLocationBrandResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmLocationBrandResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCreditCardType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCreditCardTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestCreditCardTypeResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestLocationDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecureKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestLocationDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestLocationDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmBookingTotal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerEmailID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmBookingTotalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmBookingTotalResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCompanyContactDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CompanyID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SecureKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestCompanyContactDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestCompanyContactDetailsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmSourceAndCompanyBrandName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BrandID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="APISource" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="confirmSourceAndCompanyBrandNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="confirmSourceAndCompanyBrandNameResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateWebBookingTotal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PopulateWebBookingTotalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PopulateWebBookingTotalResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestFlightRequired">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RCMReferenceKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="requestFlightRequiredResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="requestFlightRequiredResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+    <s:schema targetNamespace="https://clientWS/AbstractTypes">
+      <s:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <s:complexType name="StringArray">
+        <s:complexContent mixed="false">
+          <s:restriction base="soapenc:Array">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="unbounded" name="String" type="s:string" />
+            </s:sequence>
+          </s:restriction>
+        </s:complexContent>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="requestVehicleCategoryLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:requestVehicleCategoryLocations" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleCategoryLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:requestVehicleCategoryLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilitySoapIn">
+    <wsdl:part name="parameters" element="tns:requestVehicleAvailability" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilitySoapOut">
+    <wsdl:part name="parameters" element="tns:requestVehicleAvailabilityResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmVehicleSelection" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmVehicleSelectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasSoapIn">
+    <wsdl:part name="parameters" element="tns:requestExtras" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasSoapOut">
+    <wsdl:part name="parameters" element="tns:requestExtrasResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmInsuranceFees" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmInsuranceFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmExtraFees" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmExtraFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmKmFees" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmKmFeesResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmAreaofUse" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmAreaofUseResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmVehicleBookingQuote" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmVehicleBookingQuoteResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceSoapIn">
+    <wsdl:part name="parameters" element="tns:requestCarTransmissionPreference" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceSoapOut">
+    <wsdl:part name="parameters" element="tns:requestCarTransmissionPreferenceResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceSoapIn">
+    <wsdl:part name="parameters" element="tns:requestRentalSource" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceSoapOut">
+    <wsdl:part name="parameters" element="tns:requestRentalSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:requestCustomerCountryDetails" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:requestCustomerCountryDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmExistingCustomerDetails" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmExistingCustomerDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandSoapIn">
+    <wsdl:part name="parameters" element="tns:requestLocationBrand" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandSoapOut">
+    <wsdl:part name="parameters" element="tns:requestLocationBrandResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmLocationBrand" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmLocationBrandResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:requestCreditCardType" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:requestCreditCardTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:requestLocationDetails" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:requestLocationDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmBookingTotal" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmBookingTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:requestCompanyContactDetails" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:requestCompanyContactDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameSoapIn">
+    <wsdl:part name="parameters" element="tns:confirmSourceAndCompanyBrandName" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameSoapOut">
+    <wsdl:part name="parameters" element="tns:confirmSourceAndCompanyBrandNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalSoapIn">
+    <wsdl:part name="parameters" element="tns:PopulateWebBookingTotal" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalSoapOut">
+    <wsdl:part name="parameters" element="tns:PopulateWebBookingTotalResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredSoapIn">
+    <wsdl:part name="parameters" element="tns:requestFlightRequired" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredSoapOut">
+    <wsdl:part name="parameters" element="tns:requestFlightRequiredResponse" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleCategoryLocationsHttpGetIn">
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleCategoryLocationsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilityHttpGetIn">
+    <wsdl:part name="PickupLocation" type="s:string" />
+    <wsdl:part name="PickupDate" type="s:string" />
+    <wsdl:part name="PickupTime" type="s:string" />
+    <wsdl:part name="DropOffLocation" type="s:string" />
+    <wsdl:part name="DropOffDate" type="s:string" />
+    <wsdl:part name="DropOffTime" type="s:string" />
+    <wsdl:part name="DriverAge" type="s:string" />
+    <wsdl:part name="CategoryTypeID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+    <wsdl:part name="PromoCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilityHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionHttpGetIn">
+    <wsdl:part name="CarID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesHttpGetIn">
+    <wsdl:part name="InsuranceID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+    <wsdl:part name="ExtraFeeIDQty" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesHttpGetIn">
+    <wsdl:part name="KmsID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseHttpGetIn">
+    <wsdl:part name="AreaofUsedID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteHttpGetIn">
+    <wsdl:part name="CustomerFirstName" type="s:string" />
+    <wsdl:part name="CustomerLastName" type="s:string" />
+    <wsdl:part name="PrimaryDriverDOB" type="s:string" />
+    <wsdl:part name="PrimaryDriverLicenseNo" type="s:string" />
+    <wsdl:part name="LicenseIssuedCountryID" type="s:string" />
+    <wsdl:part name="LicenseExpiryDate" type="s:string" />
+    <wsdl:part name="Address" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="StateProvince" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="CountryID" type="s:string" />
+    <wsdl:part name="CustomerEmailID" type="s:string" />
+    <wsdl:part name="CustomerPhone" type="s:string" />
+    <wsdl:part name="ArrivalFlight" type="s:string" />
+    <wsdl:part name="PickUpRequiredFrom" type="s:string" />
+    <wsdl:part name="DropOffRequiredTo" type="s:string" />
+    <wsdl:part name="NoOfTravelling" type="s:string" />
+    <wsdl:part name="CarTransmissionPreferenceID" type="s:string" />
+    <wsdl:part name="RentalSourceID" type="s:string" />
+    <wsdl:part name="AdditionalDetails" type="s:string" />
+    <wsdl:part name="CreditCardTypeID" type="s:string" />
+    <wsdl:part name="CreditCardNumber" type="s:string" />
+    <wsdl:part name="CCV" type="s:string" />
+    <wsdl:part name="NameOnCreditCard" type="s:string" />
+    <wsdl:part name="CreditCardExpiryDate" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+    <wsdl:part name="BookingType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsHttpGetIn">
+    <wsdl:part name="CustomerLastName" type="s:string" />
+    <wsdl:part name="CustomerEmail" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandHttpGetIn">
+    <wsdl:part name="URLID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandHttpGetIn">
+    <wsdl:part name="BrandID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsHttpGetIn">
+    <wsdl:part name="LocationID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalHttpGetIn">
+    <wsdl:part name="CustomerEmailID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsHttpGetIn">
+    <wsdl:part name="CompanyID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameHttpGetIn">
+    <wsdl:part name="BrandID" type="s:string" />
+    <wsdl:part name="APISource" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredHttpGetIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleCategoryLocationsHttpPostIn">
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleCategoryLocationsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilityHttpPostIn">
+    <wsdl:part name="PickupLocation" type="s:string" />
+    <wsdl:part name="PickupDate" type="s:string" />
+    <wsdl:part name="PickupTime" type="s:string" />
+    <wsdl:part name="DropOffLocation" type="s:string" />
+    <wsdl:part name="DropOffDate" type="s:string" />
+    <wsdl:part name="DropOffTime" type="s:string" />
+    <wsdl:part name="DriverAge" type="s:string" />
+    <wsdl:part name="CategoryTypeID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+    <wsdl:part name="PromoCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestVehicleAvailabilityHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionHttpPostIn">
+    <wsdl:part name="CarID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleSelectionHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestExtrasHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesHttpPostIn">
+    <wsdl:part name="InsuranceID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmInsuranceFeesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+    <wsdl:part name="ExtraFeeIDQty" type="s1:StringArray" />
+  </wsdl:message>
+  <wsdl:message name="confirmExtraFeesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesHttpPostIn">
+    <wsdl:part name="KmsID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmKmFeesHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseHttpPostIn">
+    <wsdl:part name="AreaofUsedID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmAreaofUseHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteHttpPostIn">
+    <wsdl:part name="CustomerFirstName" type="s:string" />
+    <wsdl:part name="CustomerLastName" type="s:string" />
+    <wsdl:part name="PrimaryDriverDOB" type="s:string" />
+    <wsdl:part name="PrimaryDriverLicenseNo" type="s:string" />
+    <wsdl:part name="LicenseIssuedCountryID" type="s:string" />
+    <wsdl:part name="LicenseExpiryDate" type="s:string" />
+    <wsdl:part name="Address" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="StateProvince" type="s:string" />
+    <wsdl:part name="PostalCode" type="s:string" />
+    <wsdl:part name="CountryID" type="s:string" />
+    <wsdl:part name="CustomerEmailID" type="s:string" />
+    <wsdl:part name="CustomerPhone" type="s:string" />
+    <wsdl:part name="ArrivalFlight" type="s:string" />
+    <wsdl:part name="PickUpRequiredFrom" type="s:string" />
+    <wsdl:part name="DropOffRequiredTo" type="s:string" />
+    <wsdl:part name="NoOfTravelling" type="s:string" />
+    <wsdl:part name="CarTransmissionPreferenceID" type="s:string" />
+    <wsdl:part name="RentalSourceID" type="s:string" />
+    <wsdl:part name="AdditionalDetails" type="s:string" />
+    <wsdl:part name="CreditCardTypeID" type="s:string" />
+    <wsdl:part name="CreditCardNumber" type="s:string" />
+    <wsdl:part name="CCV" type="s:string" />
+    <wsdl:part name="NameOnCreditCard" type="s:string" />
+    <wsdl:part name="CreditCardExpiryDate" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+    <wsdl:part name="BookingType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmVehicleBookingQuoteHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCarTransmissionPreferenceHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestRentalSourceHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCustomerCountryDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsHttpPostIn">
+    <wsdl:part name="CustomerLastName" type="s:string" />
+    <wsdl:part name="CustomerEmail" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmExistingCustomerDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandHttpPostIn">
+    <wsdl:part name="URLID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationBrandHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandHttpPostIn">
+    <wsdl:part name="BrandID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmLocationBrandHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCreditCardTypeHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsHttpPostIn">
+    <wsdl:part name="LocationID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestLocationDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalHttpPostIn">
+    <wsdl:part name="CustomerEmailID" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmBookingTotalHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsHttpPostIn">
+    <wsdl:part name="CompanyID" type="s:string" />
+    <wsdl:part name="SecureKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestCompanyContactDetailsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameHttpPostIn">
+    <wsdl:part name="BrandID" type="s:string" />
+    <wsdl:part name="APISource" type="s:string" />
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="confirmSourceAndCompanyBrandNameHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PopulateWebBookingTotalHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredHttpPostIn">
+    <wsdl:part name="RCMReferenceKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="requestFlightRequiredHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="WebMobileAPI">
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <wsdl:input message="tns:requestVehicleCategoryLocationsSoapIn" />
+      <wsdl:output message="tns:requestVehicleCategoryLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <wsdl:input message="tns:requestVehicleAvailabilitySoapIn" />
+      <wsdl:output message="tns:requestVehicleAvailabilitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <wsdl:input message="tns:confirmVehicleSelectionSoapIn" />
+      <wsdl:output message="tns:confirmVehicleSelectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <wsdl:input message="tns:requestExtrasSoapIn" />
+      <wsdl:output message="tns:requestExtrasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <wsdl:input message="tns:confirmInsuranceFeesSoapIn" />
+      <wsdl:output message="tns:confirmInsuranceFeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <wsdl:input message="tns:confirmExtraFeesSoapIn" />
+      <wsdl:output message="tns:confirmExtraFeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <wsdl:input message="tns:confirmKmFeesSoapIn" />
+      <wsdl:output message="tns:confirmKmFeesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <wsdl:input message="tns:confirmAreaofUseSoapIn" />
+      <wsdl:output message="tns:confirmAreaofUseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <wsdl:input message="tns:confirmVehicleBookingQuoteSoapIn" />
+      <wsdl:output message="tns:confirmVehicleBookingQuoteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <wsdl:input message="tns:requestCarTransmissionPreferenceSoapIn" />
+      <wsdl:output message="tns:requestCarTransmissionPreferenceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <wsdl:input message="tns:requestRentalSourceSoapIn" />
+      <wsdl:output message="tns:requestRentalSourceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <wsdl:input message="tns:requestCustomerCountryDetailsSoapIn" />
+      <wsdl:output message="tns:requestCustomerCountryDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <wsdl:input message="tns:confirmExistingCustomerDetailsSoapIn" />
+      <wsdl:output message="tns:confirmExistingCustomerDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <wsdl:input message="tns:requestLocationBrandSoapIn" />
+      <wsdl:output message="tns:requestLocationBrandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <wsdl:input message="tns:confirmLocationBrandSoapIn" />
+      <wsdl:output message="tns:confirmLocationBrandSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <wsdl:input message="tns:requestCreditCardTypeSoapIn" />
+      <wsdl:output message="tns:requestCreditCardTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <wsdl:input message="tns:requestLocationDetailsSoapIn" />
+      <wsdl:output message="tns:requestLocationDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <wsdl:input message="tns:confirmBookingTotalSoapIn" />
+      <wsdl:output message="tns:confirmBookingTotalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <wsdl:input message="tns:requestCompanyContactDetailsSoapIn" />
+      <wsdl:output message="tns:requestCompanyContactDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <wsdl:input message="tns:confirmSourceAndCompanyBrandNameSoapIn" />
+      <wsdl:output message="tns:confirmSourceAndCompanyBrandNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <wsdl:input message="tns:PopulateWebBookingTotalSoapIn" />
+      <wsdl:output message="tns:PopulateWebBookingTotalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <wsdl:input message="tns:requestFlightRequiredSoapIn" />
+      <wsdl:output message="tns:requestFlightRequiredSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RCMClientAPIHttpGet">
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <wsdl:input message="tns:requestVehicleCategoryLocationsHttpGetIn" />
+      <wsdl:output message="tns:requestVehicleCategoryLocationsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <wsdl:input message="tns:requestVehicleAvailabilityHttpGetIn" />
+      <wsdl:output message="tns:requestVehicleAvailabilityHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <wsdl:input message="tns:confirmVehicleSelectionHttpGetIn" />
+      <wsdl:output message="tns:confirmVehicleSelectionHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <wsdl:input message="tns:requestExtrasHttpGetIn" />
+      <wsdl:output message="tns:requestExtrasHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <wsdl:input message="tns:confirmInsuranceFeesHttpGetIn" />
+      <wsdl:output message="tns:confirmInsuranceFeesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <wsdl:input message="tns:confirmExtraFeesHttpGetIn" />
+      <wsdl:output message="tns:confirmExtraFeesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <wsdl:input message="tns:confirmKmFeesHttpGetIn" />
+      <wsdl:output message="tns:confirmKmFeesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <wsdl:input message="tns:confirmAreaofUseHttpGetIn" />
+      <wsdl:output message="tns:confirmAreaofUseHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <wsdl:input message="tns:confirmVehicleBookingQuoteHttpGetIn" />
+      <wsdl:output message="tns:confirmVehicleBookingQuoteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <wsdl:input message="tns:requestCarTransmissionPreferenceHttpGetIn" />
+      <wsdl:output message="tns:requestCarTransmissionPreferenceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <wsdl:input message="tns:requestRentalSourceHttpGetIn" />
+      <wsdl:output message="tns:requestRentalSourceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <wsdl:input message="tns:requestCustomerCountryDetailsHttpGetIn" />
+      <wsdl:output message="tns:requestCustomerCountryDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <wsdl:input message="tns:confirmExistingCustomerDetailsHttpGetIn" />
+      <wsdl:output message="tns:confirmExistingCustomerDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <wsdl:input message="tns:requestLocationBrandHttpGetIn" />
+      <wsdl:output message="tns:requestLocationBrandHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <wsdl:input message="tns:confirmLocationBrandHttpGetIn" />
+      <wsdl:output message="tns:confirmLocationBrandHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <wsdl:input message="tns:requestCreditCardTypeHttpGetIn" />
+      <wsdl:output message="tns:requestCreditCardTypeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <wsdl:input message="tns:requestLocationDetailsHttpGetIn" />
+      <wsdl:output message="tns:requestLocationDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <wsdl:input message="tns:confirmBookingTotalHttpGetIn" />
+      <wsdl:output message="tns:confirmBookingTotalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <wsdl:input message="tns:requestCompanyContactDetailsHttpGetIn" />
+      <wsdl:output message="tns:requestCompanyContactDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <wsdl:input message="tns:confirmSourceAndCompanyBrandNameHttpGetIn" />
+      <wsdl:output message="tns:confirmSourceAndCompanyBrandNameHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <wsdl:input message="tns:PopulateWebBookingTotalHttpGetIn" />
+      <wsdl:output message="tns:PopulateWebBookingTotalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <wsdl:input message="tns:requestFlightRequiredHttpGetIn" />
+      <wsdl:output message="tns:requestFlightRequiredHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RCMClientAPIHttpPost">
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <wsdl:input message="tns:requestVehicleCategoryLocationsHttpPostIn" />
+      <wsdl:output message="tns:requestVehicleCategoryLocationsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <wsdl:input message="tns:requestVehicleAvailabilityHttpPostIn" />
+      <wsdl:output message="tns:requestVehicleAvailabilityHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <wsdl:input message="tns:confirmVehicleSelectionHttpPostIn" />
+      <wsdl:output message="tns:confirmVehicleSelectionHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <wsdl:input message="tns:requestExtrasHttpPostIn" />
+      <wsdl:output message="tns:requestExtrasHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <wsdl:input message="tns:confirmInsuranceFeesHttpPostIn" />
+      <wsdl:output message="tns:confirmInsuranceFeesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <wsdl:input message="tns:confirmExtraFeesHttpPostIn" />
+      <wsdl:output message="tns:confirmExtraFeesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <wsdl:input message="tns:confirmKmFeesHttpPostIn" />
+      <wsdl:output message="tns:confirmKmFeesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <wsdl:input message="tns:confirmAreaofUseHttpPostIn" />
+      <wsdl:output message="tns:confirmAreaofUseHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <wsdl:input message="tns:confirmVehicleBookingQuoteHttpPostIn" />
+      <wsdl:output message="tns:confirmVehicleBookingQuoteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <wsdl:input message="tns:requestCarTransmissionPreferenceHttpPostIn" />
+      <wsdl:output message="tns:requestCarTransmissionPreferenceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <wsdl:input message="tns:requestRentalSourceHttpPostIn" />
+      <wsdl:output message="tns:requestRentalSourceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <wsdl:input message="tns:requestCustomerCountryDetailsHttpPostIn" />
+      <wsdl:output message="tns:requestCustomerCountryDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <wsdl:input message="tns:confirmExistingCustomerDetailsHttpPostIn" />
+      <wsdl:output message="tns:confirmExistingCustomerDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <wsdl:input message="tns:requestLocationBrandHttpPostIn" />
+      <wsdl:output message="tns:requestLocationBrandHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <wsdl:input message="tns:confirmLocationBrandHttpPostIn" />
+      <wsdl:output message="tns:confirmLocationBrandHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <wsdl:input message="tns:requestCreditCardTypeHttpPostIn" />
+      <wsdl:output message="tns:requestCreditCardTypeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <wsdl:input message="tns:requestLocationDetailsHttpPostIn" />
+      <wsdl:output message="tns:requestLocationDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <wsdl:input message="tns:confirmBookingTotalHttpPostIn" />
+      <wsdl:output message="tns:confirmBookingTotalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <wsdl:input message="tns:requestCompanyContactDetailsHttpPostIn" />
+      <wsdl:output message="tns:requestCompanyContactDetailsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <wsdl:input message="tns:confirmSourceAndCompanyBrandNameHttpPostIn" />
+      <wsdl:output message="tns:confirmSourceAndCompanyBrandNameHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <wsdl:input message="tns:PopulateWebBookingTotalHttpPostIn" />
+      <wsdl:output message="tns:PopulateWebBookingTotalHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <wsdl:input message="tns:requestFlightRequiredHttpPostIn" />
+      <wsdl:output message="tns:requestFlightRequiredHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebMobileAPI" type="tns:WebMobileAPI">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <soap:operation soapAction="https://clientWS/requestVehicleCategoryLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <soap:operation soapAction="https://clientWS/requestVehicleAvailability" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <soap:operation soapAction="https://clientWS/confirmVehicleSelection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <soap:operation soapAction="https://clientWS/requestExtras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <soap:operation soapAction="https://clientWS/confirmInsuranceFees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <soap:operation soapAction="https://clientWS/confirmExtraFees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <soap:operation soapAction="https://clientWS/confirmKmFees" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <soap:operation soapAction="https://clientWS/confirmAreaofUse" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <soap:operation soapAction="https://clientWS/confirmVehicleBookingQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <soap:operation soapAction="https://clientWS/requestCarTransmissionPreference" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <soap:operation soapAction="https://clientWS/requestRentalSource" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <soap:operation soapAction="https://clientWS/requestCustomerCountryDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <soap:operation soapAction="https://clientWS/confirmExistingCustomerDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <soap:operation soapAction="https://clientWS/requestLocationBrand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <soap:operation soapAction="https://clientWS/confirmLocationBrand" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <soap:operation soapAction="https://clientWS/requestCreditCardType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <soap:operation soapAction="https://clientWS/requestLocationDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <soap:operation soapAction="https://clientWS/confirmBookingTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <soap:operation soapAction="https://clientWS/requestCompanyContactDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <soap:operation soapAction="https://clientWS/confirmSourceAndCompanyBrandName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <soap:operation soapAction="https://clientWS/PopulateWebBookingTotal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <soap:operation soapAction="https://clientWS/requestFlightRequired" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebMobileAPI1" type="tns:WebMobileAPI">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <soap12:operation soapAction="https://clientWS/requestVehicleCategoryLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <soap12:operation soapAction="https://clientWS/requestVehicleAvailability" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <soap12:operation soapAction="https://clientWS/confirmVehicleSelection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <soap12:operation soapAction="https://clientWS/requestExtras" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <soap12:operation soapAction="https://clientWS/confirmInsuranceFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <soap12:operation soapAction="https://clientWS/confirmExtraFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <soap12:operation soapAction="https://clientWS/confirmKmFees" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <soap12:operation soapAction="https://clientWS/confirmAreaofUse" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <soap12:operation soapAction="https://clientWS/confirmVehicleBookingQuote" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <soap12:operation soapAction="https://clientWS/requestCarTransmissionPreference" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <soap12:operation soapAction="https://clientWS/requestRentalSource" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <soap12:operation soapAction="https://clientWS/requestCustomerCountryDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <soap12:operation soapAction="https://clientWS/confirmExistingCustomerDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <soap12:operation soapAction="https://clientWS/requestLocationBrand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <soap12:operation soapAction="https://clientWS/confirmLocationBrand" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <soap12:operation soapAction="https://clientWS/requestCreditCardType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <soap12:operation soapAction="https://clientWS/requestLocationDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <soap12:operation soapAction="https://clientWS/confirmBookingTotal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <soap12:operation soapAction="https://clientWS/requestCompanyContactDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <soap12:operation soapAction="https://clientWS/confirmSourceAndCompanyBrandName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <soap12:operation soapAction="https://clientWS/PopulateWebBookingTotal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <soap12:operation soapAction="https://clientWS/requestFlightRequired" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RCMClientAPIHttpGet" type="tns:RCMClientAPIHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <http:operation location="/requestVehicleCategoryLocations" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <http:operation location="/requestVehicleAvailability" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <http:operation location="/confirmVehicleSelection" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <http:operation location="/requestExtras" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <http:operation location="/confirmInsuranceFees" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <http:operation location="/confirmExtraFees" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <http:operation location="/confirmKmFees" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <http:operation location="/confirmAreaofUse" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <http:operation location="/confirmVehicleBookingQuote" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <http:operation location="/requestCarTransmissionPreference" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <http:operation location="/requestRentalSource" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <http:operation location="/requestCustomerCountryDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <http:operation location="/confirmExistingCustomerDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <http:operation location="/requestLocationBrand" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <http:operation location="/confirmLocationBrand" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <http:operation location="/requestCreditCardType" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <http:operation location="/requestLocationDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <http:operation location="/confirmBookingTotal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <http:operation location="/requestCompanyContactDetails" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <http:operation location="/confirmSourceAndCompanyBrandName" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <http:operation location="/PopulateWebBookingTotal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <http:operation location="/requestFlightRequired" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RCMClientAPIHttpPost" type="tns:RCMClientAPIHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="requestVehicleCategoryLocations">
+      <http:operation location="/requestVehicleCategoryLocations" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestVehicleAvailability">
+      <http:operation location="/requestVehicleAvailability" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleSelection">
+      <http:operation location="/confirmVehicleSelection" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestExtras">
+      <http:operation location="/requestExtras" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmInsuranceFees">
+      <http:operation location="/confirmInsuranceFees" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExtraFees">
+      <http:operation location="/confirmExtraFees" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmKmFees">
+      <http:operation location="/confirmKmFees" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmAreaofUse">
+      <http:operation location="/confirmAreaofUse" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmVehicleBookingQuote">
+      <http:operation location="/confirmVehicleBookingQuote" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCarTransmissionPreference">
+      <http:operation location="/requestCarTransmissionPreference" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestRentalSource">
+      <http:operation location="/requestRentalSource" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCustomerCountryDetails">
+      <http:operation location="/requestCustomerCountryDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmExistingCustomerDetails">
+      <http:operation location="/confirmExistingCustomerDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationBrand">
+      <http:operation location="/requestLocationBrand" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmLocationBrand">
+      <http:operation location="/confirmLocationBrand" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCreditCardType">
+      <http:operation location="/requestCreditCardType" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestLocationDetails">
+      <http:operation location="/requestLocationDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmBookingTotal">
+      <http:operation location="/confirmBookingTotal" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestCompanyContactDetails">
+      <http:operation location="/requestCompanyContactDetails" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="confirmSourceAndCompanyBrandName">
+      <http:operation location="/confirmSourceAndCompanyBrandName" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PopulateWebBookingTotal">
+      <http:operation location="/PopulateWebBookingTotal" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestFlightRequired">
+      <http:operation location="/requestFlightRequired" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RCMClientAPI">
+    <wsdl:port name="WebMobileAPI" binding="tns:WebMobileAPI">
+      <soap:address location="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebMobileAPI1" binding="tns:WebMobileAPI1">
+      <soap12:address location="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RCMClientAPIHttpGet" binding="tns:RCMClientAPIHttpGet">
+      <http:address location="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RCMClientAPIHttpPost" binding="tns:RCMClientAPIHttpPost">
+      <http:address location="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

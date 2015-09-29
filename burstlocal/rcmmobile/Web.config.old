@@ -1,0 +1,55 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <appSettings>
+    <add key="CurrencySymbol" value="$"/>
+    <add key="CompanyCode" value="AuNewcastlerental116"/>
+    <add key="CompanyKey" value="QJwpwoSS4Lpc/x6vsv7hJA=="/>
+    <add key="ShowCategory" value="False"/>
+    <add key="ShowPromoCode" value="False"/>
+    <add key="ShowAge" value="True"/>
+    <add key="CategoryDefault" value="15"/>
+    <add key="AgeDefault" value="26"/>
+    <add key="GAKey" value="MO-39196003-1"/>
+    <add key="DayAddedToDefaultPickupDate" value="2"/>
+    <add key="DayAddedToDefaultDropoffDate" value="3"/>
+    <add key="ShowTimePicker" value="True"/>
+    <add key="DefaultPickupTime" value="08:00"/>
+    <add key="DefaultDropoffTime" value="08:00"/>
+    <add key="HomePageLink" value="http://www.newcastlerental.com/mobile.newcastlerental.com/index.html"/>
+    <add key="FindUsPageLink" value="http://www.newcastlerental.com/mobile.newcastlerental.com/locate.html"/>
+    <add key="ContactUsPageLink" value="http://www.newcastlerental.com/mobile.newcastlerental.com/locate.html"/>
+    <add key="DisplayOptionalInsurance" value="False"/>
+    <add key="DisplayOptionalExtras" value="False"/>
+    <add key="DisplayOptionalFree_KM" value="False"/>
+    <add key="DisplayOptionalPayment" value="False"/>
+    <add key="DisplayOptionalAdditionalContactDetails" value="False"/>
+    <add key="CreditCardMadatory" value="True"/>
+    <add key="AllowTermsAndConditionCheckBox" value="True"/>
+    <add key="TextDisplayWithCreditCard" value="PLEASE NOTE- No charges will be made to your Credit Card until you arrive at our office to collect your vehicle. 
+         The owner of the card must be present at the time of pick up with the card (unless prior arrangements have been made with us) In some cases we may contact you for a holding deposit."/>
+    <add key="CompanyID" value="0"/>
+    <add key="WS_RCMClientAPI.RCMClientAPI" value="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx"/>
+  </appSettings>
+  <system.web>
+    <customErrors defaultRedirect="Error.aspx" mode="RemoteOnly"/>
+    <compilation debug="true" targetFramework="4.0"/>
+    <pages>
+      <controls>
+        <add tagPrefix="telerik" namespace="Telerik.Web.UI" assembly="Telerik.Web.UI"/>
+      </controls>
+    </pages>
+  </system.web>
+  <system.webServer>
+    <defaultDocument enabled="true">
+      <files>
+        <remove value="default.aspx"/>
+        <remove value="iisstart.htm"/>
+        <remove value="index.html"/>
+        <remove value="index.htm"/>
+        <remove value="Default.asp"/>
+        <remove value="Default.htm"/>
+        <add value="webStep1.aspx"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>

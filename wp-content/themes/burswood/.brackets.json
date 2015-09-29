@@ -1,0 +1,17 @@
+{
+    "path": {
+        "style/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "output": "style.css",
+                "includePaths": [],
+                "imagePath": null,
+                "sourceComments": "none",
+                "outputStyle": "nested"
+            },
+            "mikaeljorhult.bracketsPHPLintTools.php-available": true,
+            "brackets-css-color-preview.enabled": true,
+            "linting.collapsed": true
+        }
+    }
+}

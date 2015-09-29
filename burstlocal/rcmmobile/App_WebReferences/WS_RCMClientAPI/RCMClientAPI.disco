@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx?wsdl" docRef="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" xmlns:q1="https://clientWS/" binding="q1:WebMobileAPI" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://secure20.rentalcarmanager.com.au/clientwebmobileapi/RCMClientAPI.asmx" xmlns:q2="https://clientWS/" binding="q2:WebMobileAPI1" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

@@ -1,0 +1,12 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /burswood/php/
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^a/(.*)$ /burswood/php/wp-admin/admin-ajax.php/$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /burswood/php/index.php [L]
+</IfModule>
+
+# END WordPress

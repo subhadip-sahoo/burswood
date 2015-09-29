@@ -1,0 +1,484 @@
+﻿html, body   
+{
+font-family:Arial Narrow;
+background-color: #eef1f7;
+height:100%;
+width:100%;
+padding:0;
+margin-top:0px;
+margin-bottom:0;
+font-weight:normal; 
+color: #000000;
+text-align:center;
+background-color: #ffffff;
+/*z-index:100;
+display:block;*/
+visibility:visible;
+}
+
+body   
+{
+font-size:10px;
+margin-left:auto;
+margin-right:auto;
+width:auto;
+height:auto;
+top:0px;
+bottom:0px;
+margin-top:0px;
+margin-bottom:0px;
+}
+table
+{
+font-size: 16px;
+}
+#myform
+{
+padding:5px 0 2px 0;
+}
+#maindiv
+{
+text-align:justify;
+}
+
+.clear
+{
+width:auto;
+height:4px;
+}
+
+.StepTitle
+{
+width:100%;
+color: #ffffff;
+/*
+font-weight:bold;
+*/
+font-size: 17px;
+padding:5px 0 5px 0;
+height:30px;
+vertical-align:middle;
+text-align:left;
+background-color:#E60316;
+border:1px;
+}
+
+.StepHeader
+{
+width:100%;
+color: #ffffff;
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+padding:5px 0 5px 0;
+font-size: 19px;
+letter-spacing:0px;
+height:30px;
+vertical-align:middle;
+text-align:left;
+background-color:#E60316; 
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+}
+
+input
+{
+font-size: 14px;
+font-family:Arial Narrow;
+}
+
+select
+{
+font-size: 14px;
+font-family:Arial Narrow;
+}
+.blackbar
+{
+background-color:#000000;
+padding:5px 0 5px 0;
+font-weight:bold;
+color:#ffffff;
+height:25px;
+vertical-align:middle;
+}
+
+a, a:hover, a:visited .blackbar 
+{
+color:red;
+text-decoration:none;
+}
+.alignRight
+{
+text-align:right;
+float:right;
+vertical-align:middle;
+padding-right:5px;
+height:25px;
+}
+.alignLeft
+{
+text-align:left;
+float:left;
+vertical-align:middle;
+padding-left:5px;
+height:25px;
+}
+.StepTitle .transparentbar 
+{
+width:100%;
+vertical-align:middle;
+}
+
+.blackbar .transparentbar 
+{
+width:100%;
+vertical-align:middle;
+}
+
+/*.blackbar .blackbarleft
+{
+background-color:#000000;
+float:left;
+width:50%;
+text-align:left;
+}
+.blackbar .blackbarright
+{
+background-color:#000000;
+float:right;
+width:50%;
+text-align:right;
+}*/
+
+.errordiv
+{
+background-color:#ffffff;
+margin:5px;
+border:1px solid red;
+color:#000000;
+text-align:center;
+font-weight:bold;
+  
+}
+.header 
+{  
+vertical-align:middle;
+}
+.text  
+{ color: #000000;
+vertical-align:top;
+} 
+.formtext 
+{
+} 
+.aligncenter
+{
+text-align:center;
+}
+.red
+{
+color:Red;
+}
+.grey
+{
+background-color:transparent;
+color:#063783;
+text-align:center;
+}
+/***************/
+.white
+{
+font-size: 10pt;
+color: #FFFFFF;
+font-weight: bold; /*padding-top:20px;
+padding-bottom:20px;*/
+}
+.textPad
+{
+padding-top: 2px;
+padding-bottom: 2px;
+}
+.AlreadyCustomer
+{
+padding-top: 4px;
+padding-bottom: 3px;
+vertical-align: top;
+font-size: 13pt;
+}
+/*
+.text
+{
+padding: 1px;
+}
+select
+{
+font-family: Arial;
+font-size: 8pt;
+}
+input
+{
+font-family: Arial;
+font-size: 8pt;
+color: #666666;
+}
+    
+.formtext
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000000;
+font-weight: bold;
+}
+.rcmbutton
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 30px;
+color: #FFFFFF;
+background: red;
+border: 1pt solid white;
+cursor: hand;
+cursor: pointer;
+}
+    
+.red
+{
+font-family: Arial;
+font-size: 9pt;
+color: red;
+font-weight: bold;
+}
+   
+.rcmbutton2
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 28px;
+color: #FFFFFF;
+background: #e60316;
+border: 1pt solid black;
+cursor: hand;
+cursor: pointer;
+}
+*/
+
+.rcmbutton
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 30px;
+color: #FFFFFF;
+background: red;
+border: 1pt solid white;
+cursor: hand;
+cursor: pointer;
+}
+
+div.myButton input {
+background:url('/images/lock-60.png') no-repeat;
+cursor:pointer;
+width: 200px;
+height: 100px;
+border: none;
+}
+
+
+.detailsTr
+{
+background-color: #e60316;
+color: #ffffff;
+height: 10px;
+padding: 3px 0 3px 0;
+}
+.detailsSelection
+{
+background-color: #e60316;
+color: #ffffff;
+height: 20px;
+padding: 5px 0 2px 0;
+}
+
+pre
+{
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP Printers */
+word-wrap: break-word; /* IE 5+ */
+vertical-align: bottom;
+color: #000000;
+}
+    
+.DivNotFixedWidth
+{
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP Printers */
+word-wrap: break-word; /* IE 5+ */
+vertical-align: bottom;
+color: #000000;
+overflow-y: hidden;
+}
+    
+div
+{
+overflow-y: hidden;
+}
+/* JQuery Tools */
+/* error message */
+.error
+{
+height: 15px;
+background-color: #FFFE36;
+font-size: 11px;
+border: 1px solid #E1E16D;
+padding: 4px 10px;
+color: #000;
+display: none;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius-bottomleft: 0;
+-moz-border-radius-topleft: 0;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-top-left-radius: 0;
+-moz-box-shadow: 0 0 6px #ddd;
+-webkit-box-shadow: 0 0 6px #ddd;
+}
+    
+.error p
+{
+margin: 0;
+}  
+
+.Header_
+{
+width:100%;
+color: #ffffff;
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+padding:5px 0 5px 0;
+font-size: 18px;
+letter-spacing:0px;
+height:35px;
+background-color:#E60316; 
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+vertical-align:top;
+text-align:left; 
+}
+.HeaderlblRight_
+{
+font-size:18px;
+text-align:right;
+color: #ffffff;
+vertical-align:middle;
+padding-top:5px;
+font-weight:normal;
+float:right;
+}
+.HeaderlblLeft_
+{
+  font-size:18px;
+text-align:left;
+color: #ffffff;
+vertical-align:middle;
+padding-top:5px;
+font-weight:normal;
+float:left;
+}
+.HeaderImage_
+{
+padding-left:4px;
+padding-right:10px;
+vertical-align:middle;
+}
+.Label_
+{
+width:100%;
+color: #ffffff;
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+padding:0px 0 4px 0;
+font-size: 19px;
+letter-spacing:0px;
+height:25px;
+background-color:#E60316; 
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+vertical-align:top;
+text-align:left; 
+}
+.Step2Table 
+{
+text-align:center;
+background-color:#ffffff;
+border:1px solid;
+border-color:red;
+}
+.Step2TableTR
+{
+background-color:red;
+color:#ffffff
+}
+.formtextCap
+{
+font-size:16px;
+} 
+._StyleNone
+{
+display:none;
+}
+._showhide
+{
+cursor: pointer;
+height:30px; 
+padding:5px 0 2px 0;
+}
+/***  Button Codes for Iphone */
+.Button
+{
+  vertical-align:top;
+  text-align:left;
+  font-family:Arial Narrow;
+  font-size:18px;
+  letter-spacing:normal;
+  color: #fff;
+  width: 120px;
+  height: 30px;
+  border: none;
+  background:#e60316;/*Change*/
+  -webkit-border-radius: 5px;
+  -webkit-appearance: none;
+  float:right;
+  background-image: url('../../images/arrowright.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: right;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  padding-left:10px;     /* make text start to the right of the image */
+  vertical-align: middle; /* align the text vertically centered */
+  }
+.logo
+{
+  background-image:url('../../images/Logo_RCM.png');
+  width:121px;
+  height:36px;
+  vertical-align:top;
+  border:none;
+}

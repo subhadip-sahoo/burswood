@@ -1,0 +1,84 @@
+[23-Jun-2015 16:51:19 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'unclosed block: failed at `` line: 235' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2264): scss_parser->throwParseError('unclosed block')
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:52:30 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `font:` line: 1511' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxoz.com/burswoo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:52:32 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `font:` line: 1511' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxoz.com/burswoo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:52:39 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `vertica` line: 1412' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxoz.com/bursw in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:54:14 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `padding: 20px 40px 20px 53px''` line: 1504' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/publi in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:54:16 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `padding: 20px 40px 20px 53px''` line: 1504' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/publi in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 16:54:22 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `padding: 20px 40px 20px 53px''` line: 1504' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/publi in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[23-Jun-2015 17:16:00 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'unclosed block: failed at `` line: 235' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2264): scss_parser->throwParseError('unclosed block')
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[24-Jun-2015 16:54:41 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'unclosed block: failed at `` line: 1408' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2264): scss_parser->throwParseError('unclosed block')
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natx in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[24-Jun-2015 16:55:08 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `display` line: 1407' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxoz.com/bursw in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[24-Jun-2015 16:55:30 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'parse error: failed at `opacit` line: 1404' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2261): scss_parser->throwParseError()
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxoz.com/burswo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436
+[24-Jun-2015 17:00:50 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'unclosed block: failed at `` line: 235' in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php:3436
+Stack trace:
+#0 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(2264): scss_parser->throwParseError('unclosed block')
+#1 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php(64): scss_parser->parse('@import 'mixins...')
+#2 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/ScssphpFilter.php(57): scssc->compile('@import 'mixins...')
+#3 /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/Assetic/Filter/FilterCollection.php(62): Assetic\Filter\ScssphpFilter->filterLoad(Object(Assetic\Asset\FileAsset))
+#4 /home3/threenet/public_html/natxo in /home3/threenet/public_html/natxoz.com/burswood/wp-content/themes/burswood/installer/plugins/assetsminify/lib/scssc.php on line 3436

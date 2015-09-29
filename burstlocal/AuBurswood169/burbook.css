@@ -1,0 +1,36 @@
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #233A32;
+	background-color: #ffc988;
+	margin: 0px;
+	padding: 0px;
+	background-image: url(graphics/bg-tile.gif);
+	background-repeat: repeat-y;
+	background-position: center top;
+	}p {
+	margin-right: 40px;
+}
+h1 {
+	color: #233A32;
+	font-size: 150%;
+}
+.egg {
+	background-color: #ffffff;
+	color: #233A32;
+}
+.white {  font-family: Arial;font-size: 10pt;color: #FFFFFF; font-weight: bold; }  
+.text  {  font-family: Arial;font-size: 8pt;color: #666666; }  
+.formtext {  font-family: Arial;font-size: 8pt;color: #666666; font-weight: bold; }
+.header {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #233a32;
+}
+.footer {
+}
+a:link {
+	color: #233A32;
+}

@@ -1,0 +1,170 @@
+﻿<error errorId="ca180e7c-4fd4-4f4c-a37a-56d2d696f7e2" host="4461NVIRT" type="System.Web.HttpException" message="This is an invalid script resource request." source="System.Web.Extensions" detail="System.Web.HttpException (0x80004005): This is an invalid script resource request.&#xD;&#xA;   at System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContextBase context, VirtualFileReader fileReader, Action`2 logAction, Boolean validatePath)&#xD;&#xA;   at System.Web.Handlers.ScriptResourceHandler.ProcessRequest(HttpContext context)&#xD;&#xA;   at System.Web.Handlers.ScriptResourceHandler.System.Web.IHttpHandler.ProcessRequest(HttpContext context)&#xD;&#xA;   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()&#xD;&#xA;   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously)" time="2014-03-19T01:41:26.1011212Z" statusCode="404">
+  <serverVariables>
+    <item name="ALL_HTTP">
+      <value string="HTTP_CONNECTION:Keep-alive&#xD;&#xA;HTTP_ACCEPT:*/*, */*&#xD;&#xA;HTTP_ACCEPT_ENCODING:gzip,deflate&#xD;&#xA;HTTP_COOKIE:ASP.NET_SessionId=c4elaelwn3dt0ebeppkvjukz&#xD;&#xA;HTTP_FROM:googlebot(at)googlebot.com&#xD;&#xA;HTTP_HOST:secure20.rentalcarmanager.com.au&#xD;&#xA;HTTP_REFERER:https://secure20.rentalcarmanager.com.au/ssl/Australiawide71/rcmmobile/WebStep1.aspx&#xD;&#xA;HTTP_USER_AGENT:Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)&#xD;&#xA;" />
+    </item>
+    <item name="ALL_RAW">
+      <value string="Connection: Keep-alive&#xD;&#xA;Accept: */*, */*&#xD;&#xA;Accept-Encoding: gzip,deflate&#xD;&#xA;Cookie: ASP.NET_SessionId=c4elaelwn3dt0ebeppkvjukz&#xD;&#xA;From: googlebot(at)googlebot.com&#xD;&#xA;Host: secure20.rentalcarmanager.com.au&#xD;&#xA;Referer: https://secure20.rentalcarmanager.com.au/ssl/Australiawide71/rcmmobile/WebStep1.aspx&#xD;&#xA;User-Agent: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)&#xD;&#xA;" />
+    </item>
+    <item name="APPL_MD_PATH">
+      <value string="/LM/W3SVC/1/ROOT/SSL/Australiawide71/rcmmobile" />
+    </item>
+    <item name="APPL_PHYSICAL_PATH">
+      <value string="C:\GMH\rcm\SSL\Australiawide71\rcmmobile\" />
+    </item>
+    <item name="AUTH_TYPE">
+      <value string="" />
+    </item>
+    <item name="AUTH_USER">
+      <value string="" />
+    </item>
+    <item name="AUTH_PASSWORD">
+      <value string="" />
+    </item>
+    <item name="LOGON_USER">
+      <value string="" />
+    </item>
+    <item name="REMOTE_USER">
+      <value string="" />
+    </item>
+    <item name="CERT_COOKIE">
+      <value string="" />
+    </item>
+    <item name="CERT_FLAGS">
+      <value string="" />
+    </item>
+    <item name="CERT_ISSUER">
+      <value string="" />
+    </item>
+    <item name="CERT_KEYSIZE">
+      <value string="128" />
+    </item>
+    <item name="CERT_SECRETKEYSIZE">
+      <value string="2048" />
+    </item>
+    <item name="CERT_SERIALNUMBER">
+      <value string="" />
+    </item>
+    <item name="CERT_SERVER_ISSUER">
+      <value string="C=US, S=Arizona, L=Scottsdale, O=&quot;GoDaddy.com, Inc.&quot;, OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2" />
+    </item>
+    <item name="CERT_SERVER_SUBJECT">
+      <value string="OU=Domain Control Validated, CN=secure20.rentalcarmanager.com.au" />
+    </item>
+    <item name="CERT_SUBJECT">
+      <value string="" />
+    </item>
+    <item name="CONTENT_LENGTH">
+      <value string="0" />
+    </item>
+    <item name="CONTENT_TYPE">
+      <value string="" />
+    </item>
+    <item name="GATEWAY_INTERFACE">
+      <value string="CGI/1.1" />
+    </item>
+    <item name="HTTPS">
+      <value string="on" />
+    </item>
+    <item name="HTTPS_KEYSIZE">
+      <value string="128" />
+    </item>
+    <item name="HTTPS_SECRETKEYSIZE">
+      <value string="2048" />
+    </item>
+    <item name="HTTPS_SERVER_ISSUER">
+      <value string="C=US, S=Arizona, L=Scottsdale, O=&quot;GoDaddy.com, Inc.&quot;, OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2" />
+    </item>
+    <item name="HTTPS_SERVER_SUBJECT">
+      <value string="OU=Domain Control Validated, CN=secure20.rentalcarmanager.com.au" />
+    </item>
+    <item name="INSTANCE_ID">
+      <value string="1" />
+    </item>
+    <item name="INSTANCE_META_PATH">
+      <value string="/LM/W3SVC/1" />
+    </item>
+    <item name="LOCAL_ADDR">
+      <value string="192.168.11.148" />
+    </item>
+    <item name="PATH_INFO">
+      <value string="/SSL/Australiawide71/rcmmobile/ScriptResource.axd" />
+    </item>
+    <item name="PATH_TRANSLATED">
+      <value string="C:\GMH\rcm\SSL\Australiawide71\rcmmobile\ScriptResource.axd" />
+    </item>
+    <item name="QUERY_STRING">
+      <value string="d=HTa0LWkpLsSmBAzjgRlTgty5n_bxGsjsHh9ppT8OiEmkL-UQdBPIeFpOMvNIBc4ULXHVgZHYsuLZYpqwenMsdJQyCfpGz7bNIagQTXg31Zx2kJftNcyZRrl01zS_AlugXRIGOx7NLYB5KEGit4XNhw2&amp;t=7fbb4881" />
+    </item>
+    <item name="REMOTE_ADDR">
+      <value string="66.249.76.16" />
+    </item>
+    <item name="REMOTE_HOST">
+      <value string="66.249.76.16" />
+    </item>
+    <item name="REMOTE_PORT">
+      <value string="62683" />
+    </item>
+    <item name="REQUEST_METHOD">
+      <value string="GET" />
+    </item>
+    <item name="SCRIPT_NAME">
+      <value string="/SSL/Australiawide71/rcmmobile/ScriptResource.axd" />
+    </item>
+    <item name="SERVER_NAME">
+      <value string="secure20.rentalcarmanager.com.au" />
+    </item>
+    <item name="SERVER_PORT">
+      <value string="443" />
+    </item>
+    <item name="SERVER_PORT_SECURE">
+      <value string="1" />
+    </item>
+    <item name="SERVER_PROTOCOL">
+      <value string="HTTP/1.1" />
+    </item>
+    <item name="SERVER_SOFTWARE">
+      <value string="Microsoft-IIS/7.5" />
+    </item>
+    <item name="URL">
+      <value string="/SSL/Australiawide71/rcmmobile/ScriptResource.axd" />
+    </item>
+    <item name="HTTP_CONNECTION">
+      <value string="Keep-alive" />
+    </item>
+    <item name="HTTP_ACCEPT">
+      <value string="*/*, */*" />
+    </item>
+    <item name="HTTP_ACCEPT_ENCODING">
+      <value string="gzip,deflate" />
+    </item>
+    <item name="HTTP_COOKIE">
+      <value string="ASP.NET_SessionId=c4elaelwn3dt0ebeppkvjukz" />
+    </item>
+    <item name="HTTP_FROM">
+      <value string="googlebot(at)googlebot.com" />
+    </item>
+    <item name="HTTP_HOST">
+      <value string="secure20.rentalcarmanager.com.au" />
+    </item>
+    <item name="HTTP_REFERER">
+      <value string="https://secure20.rentalcarmanager.com.au/ssl/Australiawide71/rcmmobile/WebStep1.aspx" />
+    </item>
+    <item name="HTTP_USER_AGENT">
+      <value string="Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" />
+    </item>
+  </serverVariables>
+  <queryString>
+    <item name="d">
+      <value string="HTa0LWkpLsSmBAzjgRlTgty5n_bxGsjsHh9ppT8OiEmkL-UQdBPIeFpOMvNIBc4ULXHVgZHYsuLZYpqwenMsdJQyCfpGz7bNIagQTXg31Zx2kJftNcyZRrl01zS_AlugXRIGOx7NLYB5KEGit4XNhw2" />
+    </item>
+    <item name="t">
+      <value string="7fbb4881" />
+    </item>
+  </queryString>
+  <cookies>
+    <item name="ASP.NET_SessionId">
+      <value string="c4elaelwn3dt0ebeppkvjukz" />
+    </item>
+  </cookies>
+</error>

@@ -1,0 +1,19 @@
+
+
+<script language="javascript" type="text/javascript">
+  var newwindow = null;
+  function popitup(url) {
+    if ((newwindow == null) || (newwindow.closed)) {
+      newwindow = window.open(url, 'Buy', 'width=950,height=650,scrollbars=yes,resizable=yes');
+      newwindow.focus();
+    } else {
+      newwindow.location.href = url;
+      newwindow.focus();
+    }
+  }
+
+</script>
+
+
+<a href="javascript:popitup('https://secure.rentalcarmanager.com.au/ssl/AuBurswood169/webBookingStep1.asp')"><IMG SRC="quote.gif" border=0 ></a>
+

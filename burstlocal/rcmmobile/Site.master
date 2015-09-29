@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<%@ Import Namespace="mRCMAPI" %>
+
+<%@ Master Language="VB" CodeFile="Site.master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+  <%--<link href="~/Styles/mobStyle.css" rel="stylesheet" type="text/css" />--%>
+  <title>Rental Car Manager Mobile</title>
+  <script type="text/javascript" language="javascript">
+    function trOpen(id,idHide,blankRow) {
+      //alert('Hii');
+      //blankRow
+      var styleBlankRow = document.getElementById(blankRow).style;
+      //alert(styleBlankRow);
+      if (styleBlankRow.display == "block") {
+        styleBlankRow.display = "none";
+      }
+      else {
+        styleBlankRow.display = "block";
+      }
+
+      var style = document.getElementById(id).style;
+      if (style.display == "none") {
+        style.display = "table-row";
+      }
+      else {
+        style.display = "none";
+      }
+    }
+    function checkNumeric(objName) {
+      var numberfield = objName;
+      if (chkNumeric(objName) == false) {
+        numberfield.select();
+        numberfield.focus();
+        alert("Please enter a number");
+        return false;
+      }
+      else {
+        return true;
+      }
+    }
+
+    var elementExists = function (element) {
+      while (element) {
+        if (element == document) {
+          return true;
+        }
+        element = element.parentNode;
+      }
+      return false;
+    }
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+      var regexS = "[\\?&]" + name + "=([^&#]*)";
+      var regex = new RegExp(regexS);
+      var results = regex.exec(window.location.search);
+      if (results == null)
+        return "";
+      else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+  </script>
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+  <form id="myform" runat="server">
+  <asp:ScriptManager runat="server" ID="ScriptManager1">
+    <Scripts>
+      <asp:ScriptReference Path="~/Scripts/Safari3AjaxHack.js" />
+    </Scripts>
+  </asp:ScriptManager>
+  <% Dim googleAnalyticsImageUrl As String = GoogleAnalyticsGetImageUrl()%>
+  <div class="header" id="header">
+   <div id="client_header" class="aligncenter">
+     <table border="0" cellpadding="0" cellspacing="0" width="100%">
+       <tr>
+         <td colspan="4">
+           <asp:Image AlternateText="siteheader" ID="logo" runat="server" />
+         </td>
+       </tr>
+       <%--<tr><td style="height:2px;"><div style="width:100%;height:100%;overflow:hidden;">&nbsp;</div></td></tr>--%>
+       <tr><td style="height:1px; font-size:1px;" colspan="4">&nbsp;</td></tr>
+       <tr style="padding:3px;">
+         <td style="width: 3px;">
+           &nbsp;
+         </td>
+         <td valign="middle" align="left">
+           <asp:HyperLink ID="btnFindUs" runat="server" Text="Find Us" CssClass="MasterFindUS" />
+         </td>
+         <td align="right" valign="middle">
+           <asp:HyperLink ID="btnContactUs" runat="server" Text="Contact Us" CssClass="MasterContactUS" />
+         </td>
+         <td style="width: 3px;">
+           &nbsp;
+         </td>
+       </tr>
+       <tr><td style="height:1px; font-size:1px;">&nbsp;</td></tr>
+     </table>
+    </div>
+  </div>
+  <div class="main">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+  </div>
+  <div class="footer">
+    <asp:ContentPlaceHolder ID="FooterContent" runat="server" />
+    <img src="<%= googleAnalyticsImageUrl %>" /> <%--Testing: <%= googleAnalyticsImageUrl %>--%>
+  </div>
+  </form>
+</body>
+</html>

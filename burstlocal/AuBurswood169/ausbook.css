@@ -1,0 +1,23 @@
+body {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+	background-color: #EFF0E0;
+	margin: 0px;
+	padding: 0px;
+	}.egg {
+	background-color: #E4E4E4;
+	color: #000066;
+}
+.white {  font-family: Arial;font-size: 10pt;color: #FFFFFF; font-weight: bold; }  
+.text  {  font-family: Arial;font-size: 8pt;color: #666666; }  
+.formtext {  font-family: Arial;font-size: 8pt;color: #666666; font-weight: bold; }
+.header {
+	font-family: Arial;
+	font-size: 10pt;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #001B6C;
+}
+.footer {
+}

@@ -1,0 +1,718 @@
+﻿html, body   
+{
+font-family:Arial Narrow;
+background-color:#f28a0f; /*CHANGE*/
+height:100%;
+width:100%;
+padding:0;
+margin-top:0px;
+margin-bottom:0px;
+font-weight:normal; 
+color: #fffdf5;/*change for text in complete project*/
+text-align:center;
+/*z-index:100;
+display:block;*/
+visibility:visible;
+}
+
+body   
+{
+font-size:10px;
+margin-left:auto;
+margin-right:auto;
+width:auto;
+height:auto;
+top:0px;
+bottom:0px;
+margin-top:0px;
+margin-bottom:0px;
+}
+table
+{
+font-size: 16px;
+}
+#myform
+{
+/*padding:5px 0 2px 0;*/
+}
+#maindiv
+{
+text-align:justify;
+}
+
+.clear
+{
+width:auto;
+height:4px;
+}
+
+.StepTitle
+{
+width:100%;
+color: #1d5187;
+/*font-weight:bold;*/
+font-size: 17px;
+height:40px;
+vertical-align:middle;
+text-align:left;
+background-color:#233a32;/*change for step1 footer  */
+border-bottom: 5px solid #073774;
+}
+
+.StepHeader
+{
+width:100%;
+color:#fff;/*Chnage for step1 header*/
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+/*padding:5px 0 5px 0;*/
+font-size: 19px;
+letter-spacing:0px;
+height:30px;
+vertical-align:middle;
+text-align:left;
+background-color:#233a32; /*Chnage for step1 header*/
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+border-bottom: 5px solid #073774;
+}
+
+input
+{
+color:#666666;/*Change*/
+font-size: 14px;
+font-family:Arial Narrow;
+}
+
+select
+{
+font-size: 14px;
+font-family:Arial Narrow;
+color:#666666;/*Change*/
+}
+.blackbar /*The Header*/
+{
+background-color:#0d640a;/*Change for step2 header*/
+/*border:1px solid #0474aa;*/
+padding:5px 0 0px 0px;
+font-weight:bold;
+color:#fff;/*Change*/
+vertical-align:middle;
+height:100%;
+}
+
+a, a:hover, a:visited .blackbar 
+{
+color:#fff; /*Hyperlinks color*/ 
+text-decoration:none;
+}
+.alignRight
+{
+text-align:right;
+float:right;
+vertical-align:middle;
+padding-right:5px;
+height:25px;
+}
+.alignLeft
+{
+text-align:left;
+float:left;
+vertical-align:middle;
+padding-left:5px;
+height:25px;
+}
+.StepTitle .transparentbar 
+{
+width:100%;
+vertical-align:middle;
+}
+
+.blackbar .transparentbar 
+{
+width:100%;
+vertical-align:middle;
+}
+
+/*.blackbar .blackbarleft
+{
+background-color:#000000;
+float:left;
+width:50%;
+text-align:left;
+}
+.blackbar .blackbarright
+{
+background-color:#000000;
+float:right;
+width:50%;
+text-align:right;
+}*/
+
+.errordiv
+{
+background-color:#ffffff;
+margin:5px;
+border:1px solid red;
+color:#000000;
+text-align:center;
+font-weight:bold;
+  
+}
+.header 
+{  
+vertical-align:middle;
+}
+.text  
+{ 
+/*color: #000000;*/
+vertical-align:top;
+} 
+.formtext 
+{
+  color:#194c81; /*CHANGE in step2 */
+} 
+.aligncenter
+{
+text-align:center;
+}
+.red
+{
+color:Red;
+}
+.grey
+{
+background-color:transparent;
+color:#063783;
+text-align:center;
+}
+/***************/
+.white
+{
+font-size: 10pt;
+color: #FFFFFF;
+font-weight: bold; /*padding-top:20px;
+padding-bottom:20px;*/
+}
+.textPad
+{
+padding-top: 2px;
+padding-bottom: 2px;
+}
+.AlreadyCustomer
+{
+padding-top: 4px;
+padding-bottom: 3px;
+vertical-align: top;
+font-size: 13pt;
+}
+/*
+.text
+{
+padding: 1px;
+}
+select
+{
+font-family: Arial;
+font-size: 8pt;
+}
+input
+{
+font-family: Arial;
+font-size: 8pt;
+color: #666666;
+}
+    
+.formtext
+{
+font-family: Arial;
+font-size: 8pt;
+color: #000000;
+font-weight: bold;
+}
+.rcmbutton
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 30px;
+color: #FFFFFF;
+background: red;
+border: 1pt solid white;
+cursor: hand;
+cursor: pointer;
+}
+    
+.red
+{
+font-family: Arial;
+font-size: 9pt;
+color: red;
+font-weight: bold;
+}
+   
+.rcmbutton2
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 28px;
+color: #FFFFFF;
+background: #e60316;
+border: 1pt solid black;
+cursor: hand;
+cursor: pointer;
+}
+*/
+
+.rcmbutton
+{
+font-family: Arial;
+font-size: 12pt;
+border-radius: 3px;
+height: 30px;
+color: #FFFFFF;
+background: red;
+border: 1pt solid white;
+cursor: hand;
+cursor: pointer;
+}
+
+div.myButton input {
+background:url('/images/lock-60.png') no-repeat;
+cursor:pointer;
+width: 200px;
+height: 100px;
+border: none;
+}
+
+
+.detailsTr
+{
+background-color: #194c81;/*Change for steps*/
+color: #ffffff;
+height: 10px;
+padding: 3px 0 3px 0;
+}
+.detailsSelection
+{
+background-color:#0474AA;/*Change*/
+color: #ffffff;
+height: 20px;
+padding: 5px 0 2px 0;
+}
+
+pre
+{
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP Printers */
+word-wrap: break-word; /* IE 5+ */
+vertical-align: bottom;
+color: #000000;
+}
+    
+.DivNotFixedWidth
+{
+white-space: pre; /* CSS 2.0 */
+white-space: pre-wrap; /* CSS 2.1 */
+white-space: pre-line; /* CSS 3.0 */
+white-space: -pre-wrap; /* Opera 4-6 */
+white-space: -o-pre-wrap; /* Opera 7 */
+white-space: -moz-pre-wrap; /* Mozilla */
+white-space: -hp-pre-wrap; /* HP Printers */
+word-wrap: break-word; /* IE 5+ */
+vertical-align: bottom;
+overflow-y: hidden;
+}
+    
+div
+{
+overflow-y: hidden;
+}
+/* JQuery Tools */
+/* error message */
+.error
+{
+height: 15px;
+background-color: #FFFE36;
+font-size: 11px;
+border: 1px solid #E1E16D;
+padding: 4px 10px;
+color: #000;
+display: none;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+-moz-border-radius-bottomleft: 0;
+-moz-border-radius-topleft: 0;
+-webkit-border-bottom-left-radius: 0;
+-webkit-border-top-left-radius: 0;
+-moz-box-shadow: 0 0 6px #ddd;
+-webkit-box-shadow: 0 0 6px #ddd;
+}
+    
+.error p
+{
+margin: 0;
+}  
+
+.Header_
+{
+width:100%;
+color: #ffffff;
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+padding:5px 0 5px 0;
+font-size: 18px;
+letter-spacing:0px;
+height:35px;
+background-color:#0e670b; /*Change*/
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+vertical-align:top;
+text-align:left; 
+}
+.HeaderlblRight_
+{
+font-size:18px;
+text-align:right;
+color: #ffffff;
+vertical-align:middle;
+padding-top:5px;
+font-weight:normal;
+float:right;
+}
+.HeaderlblLeft_
+{
+  font-size:18px;
+text-align:left;
+color: #ffffff;
+vertical-align:middle;
+padding-top:5px;
+font-weight:normal;
+float:left;
+}
+.HeaderImage_
+{
+padding-left:4px;
+padding-right:10px;
+vertical-align:middle;
+}
+.Label_
+{
+width:100%;
+color: #ffffff;
+font-weight:lighter;
+text-decoration:none;
+text-transform:none;
+padding:0px 0 4px 0;
+font-size: 19px;
+letter-spacing:0px;
+height:25px;
+background-color:#0474AA;/*Change*/
+-webkit-font-smoothing: none;
+-webkit-font-smoothing: subpixel-antialiased;
+-webkit-font-smoothing: antialiased;
+vertical-align:top;
+text-align:left; 
+}
+.Step2Table 
+{
+text-align:center;
+background-color:#ffffff;
+border:1px solid;
+border-color:#0474AA;/*Change*/
+}
+.Step2TableTR
+{
+background-color: #0474AA;/*Change*/
+color:#ffffff
+}
+.formtextCap
+{
+font-size:16px;
+} 
+._StyleNone
+{
+display:none;
+}
+._showhide
+{
+cursor: pointer;
+height:30px; 
+padding:5px 0 2px 0;
+}
+/***  Button Codes for Iphone */
+.Button /*RCMStep1 */
+{
+  vertical-align:top;
+  text-align:left;
+  font-family:Arial Narrow;
+  font-size:18px;
+  letter-spacing:normal;
+  color: #fff;
+  width: 120px;
+  height: 30px;
+  border: none;
+  background:#a3cd39;/*Change*/
+  -webkit-border-radius: 5px;
+  -webkit-appearance: none;
+  float:right;
+  background-image: url('../../images/arrowright.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: right;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  padding-left:10px;     /* make text start to the right of the image */
+  vertical-align: middle; /* align the text vertically centered */
+  }
+
+.HeaderButtonHome
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:18px;
+  font-weight:normal;
+  float:right;
+  color: #fff;
+  width: 70px;
+  height: 25px;
+  border: none;
+  background:#073774;/*Change*/
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/home_icon.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  /*padding-left:20px;     /* make text start to the right of the image */
+  padding-top:0px;
+  /*padding-right:20px;*/
+  vertical-align:top; /* align the text vertically centered */
+  }
+
+.HeaderButtonBack
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:18px;
+  font-weight:normal;
+  float:left;
+  color: #fff;
+  width: 70px;
+  height: 25px;
+  border: none;
+  background:#073774;/*Change*/
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/home_icon.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  /*padding-left:20px;     /* make text start to the right of the image */
+  padding-top:0px;
+  /*padding-right:20px;*/
+  vertical-align:top; /* align the text vertically centered */
+  }
+
+.HeaderButtonStep2
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:16px;
+  font-weight:normal;
+  float:right;
+  color: #fff;
+  width: 100px;
+  height: 25px;
+  border: none;
+  background:#194c81;/*Change*/
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/arrowleft.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  padding-left:5px;     /* make text start to the right of the image */
+  padding-bottom:3px;
+  padding-right:5px;
+  vertical-align:top; /* align the text vertically centered */
+  }
+.ImageCar
+{
+  background-color:#fff;
+}
+.ButtonStep34
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:20px;
+  font-weight:normal;
+  /*float:right;*/
+  color: #fff;
+  width: 120px;
+  height: 35px;
+  border: none;
+  background:#194c81;/*Change*/
+  -webkit-border-radius: 0px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/arrowleft.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  padding-left:5px;     /* make text start to the right of the image */
+  padding-bottom:3px;
+  padding-right:5px;
+  vertical-align:top; /* align the text vertically centered */
+  }
+.lessHeight
+{
+  text-align:center;
+  padding-bottom:10px;
+}
+/*Header Seperator*/
+.TransparentSeperator
+{
+  background-color:#073774; /*CHANGE*/
+  height:3px; 
+  font-size:3px;
+}
+#logo
+{
+ height:auto;
+vertical-align:text-bottom;
+/*content:url("http://dev.rentalcarmanager.com.au/DB/AuRcmDemo49/Mobilelogo.png");*/
+}
+
+/* changes on 5-Feb-2012  */
+
+.MasterFindUS
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:18px;
+  font-weight:normal;
+  float:left;
+  color: #fff;
+  width: 150px;
+  height:30px;
+  border: none;
+  background:#a3cd39;/*Change*/
+  -webkit-border-radius: 5px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/home_icon.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  /*padding-left:20px;     /* make text start to the right of the image */
+  padding-top:8px;
+  /*padding-right:20px;*/
+  vertical-align:middle; /* align the text vertically centered */
+  }
+
+.MasterContactUS
+{
+  text-align:center;
+  font-family:Arial Narrow;
+  font-size:18px;
+  font-weight:normal;
+  float:right;
+  color: #fff;
+  width: 150px;
+  height:30px;
+  border: none;
+  background:#a3cd39;/*Change*/
+  -webkit-border-radius:5px;
+  -webkit-appearance: none;
+  /*background-image: url('../../images/home_icon.png'); /* 16px x 16px */
+  /* background-color: transparent; /* make the button transparent */
+  background-repeat: no-repeat;  /* make the background image appear only once */
+  background-position: left;
+  border: none;           /* assuming we don't want any borders */
+  cursor: pointer;        /* make the cursor like hovering over an <a> element */
+  /*padding-left:20px;     /* make text start to the right of the image */
+  padding-top:8px;
+  /*padding-right:20px;*/
+  vertical-align:middle; /* align the text vertically centered */
+  }
+
+
+
+
+/*********************/
+/* New Kook Styles */
+
+body { font-family: Arial,Helvetica,sans-serif; font-size: 14px;}
+table { font-size:14px;}
+
+.MasterFindUS, .MasterContactUS, .StepHeader, .StepTitle, .Button, .Header_, .HeaderButtonBack, .HeaderButtonHome, .HeaderButtonStep2, .Label_, .ButtonStep34
+{
+  font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+  font-size: 18px!important;
+  font-weight:400;
+  font-style:italic;
+  opacity: 0.9;
+}
+
+.MasterFindUS, .MasterContactUS
+{
+  text-shadow: 1px 1px 1px #0f3053;
+}
+a.MasterFindUS:hover, a.MasterContactUS:hover, .Button:hover, .HeaderButtonBack:hover, .HeaderButtonHome:hover, .HeaderButtonStep2:hover, .Label_:hover, .detailsSelection:hover, .ButtonStep34:hover
+{
+  opacity: 1;
+  color:#fff;
+}
+
+.StepHeader, .Header_ {
+	/*background-color: #0e670b;*/
+  /*text-shadow: 1px 1px 1px #a74519;*/
+}
+
+.Button, .HeaderButtonBack, .HeaderButtonHome, .HeaderButtonStep2, .ButtonStep34{
+	color: #fff;
+	text-shadow: 1px 1px 1px #8d0f14;
+	width: 140px;
+	height: 38px;
+	line-height:38px;
+	-webkit-border-radius: 5px;
+	-webkit-appearance: none;
+}
+.HeaderButtonBack, .HeaderButtonHome{
+	width: 100px;
+	height: 32px;
+	line-height:32px;
+}
+.HeaderButtonBack, .HeaderButtonHome, .Label_, .detailsSelection{
+	/*background-color: #3999d6;*/
+	text-shadow: 1px 1px 1px #236b98;
+}
+
+.Step2Table { border-color: #1c4f85;}
+.Step2TableTR { background-color: #1c4f85;}
+.formtext { color: #1c4f85;}
+
+/*table#maintable tr:nth-child(3) td, table#maintable tr:nth-child(6) td{ border-bottom: 5px solid #e5e5e5}*/
+.RadPicker td {border-bottom: none!important;}
+
+/*#tr_KmFeeExtra2, #tr_Extra, #_trInsurance, #MainContent_tr_AllFeeDetails_ {background-color: #e5e5e5; border-bottom: 1px solid #fff;}*/
+
